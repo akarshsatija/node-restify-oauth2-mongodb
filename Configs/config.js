@@ -8,9 +8,9 @@ module.exports = {
         name: 'restify-oauth2-mongoDB'
       },
 	    host: 'localhost',
-	    port: '8090',
+	    port: '3000',
       db_url: 'mongodb://localhost:27017/restify_test',
-      redis_url: null,
+      //redis_url: null,
       session_timeout: 20 * 60 * 10, // defaults to 20 minutes, in ms (20 * 60 * 1000)
       socket_loglevel: '1', // 0 - error, 1 - warn, 2 - info, 3 - debug
       mailSettings : {
@@ -30,7 +30,7 @@ module.exports = {
       host: 'http://yourapp.herokuapp.com',
       port: process.env.PORT,
       db_url: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL,
-      redis_url: process.env.REDISTOGO_URL,
+      //redis_url: process.env.REDISTOGO_URL,
       session_timeout: 20 * 60 * 10, // defaults to 20 minutes, in ms (20 * 60 * 10)
       socket_loglevel: '1', // 0 - error, 1 - warn, 2 - info, 3 - debug
       mailSettings : {
